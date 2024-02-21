@@ -80,24 +80,24 @@ WSGI_APPLICATION = 'newcompanywebsite.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': str(os.path.join(BASE_DIR, "db.sqlite3"))
-,
-    }
-}
-
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'consignwebsite',
-#         'USER': 'consignwebsite_user',
-#         'PASSWORD':'AxKAIFZMgC6qcZx52V4C4SLyDEUq3NA7',
-#         'HOST': 'dpg-cfi6j982i3murce2t860-a.singapore-postgres.render.com',
-#         'PORT': '5432',
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': str(os.path.join(BASE_DIR, "db.sqlite3"))
+# ,
 #     }
 # }
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'consignwebsite',
+        'USER': 'consignwebsite_user',
+        'PASSWORD':'AxKAIFZMgC6qcZx52V4C4SLyDEUq3NA7',
+        'HOST': 'dpg-cfi6j982i3murce2t860-a.singapore-postgres.render.com',
+        'PORT': '5432',
+    }
+}
 
 
 # Password validation
