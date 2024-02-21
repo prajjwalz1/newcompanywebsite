@@ -99,15 +99,11 @@ POSTGRES_DATABASE="verceldb"
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': POSTGRES_DATABASE,
-        'USER': POSTGRES_USER,
-        'PASSWORD': POSTGRES_PASSWORD,
-        'HOST': POSTGRES_HOST,
-        'PORT': '5432',
-        # Add SSL settings if necessary
-        # 'OPTIONS': {
-        #     'sslmode': 'require',
-        # }
+        'NAME': 'hvejjwem',                      # Database name
+        'USER': 'hvejjwem',                      # Database user
+        'PASSWORD': 'RZL46MMnRJnKWOKisYGJUz4zYwYQzU2f',  # Database password
+        'HOST': 'rain.db.elephantsql.com',       # Database host
+        'PORT': '5432',                           # Database port (default PostgreSQL port)
     }
 }
 
