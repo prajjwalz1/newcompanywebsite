@@ -1,1 +1,1 @@
-from management.wsgi import application
+from newcompanywebsite.wsgi import application
