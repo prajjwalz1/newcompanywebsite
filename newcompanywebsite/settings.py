@@ -82,16 +82,28 @@ WSGI_APPLICATION = 'newcompanywebsite.wsgi.application'
 
 
 
+POSTGRES_URL="postgres://default:kzw3jEi2dShg@ep-long-mud-49593253-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_PRISMA_URL="postgres://default:kzw3jEi2dShg@ep-long-mud-49593253-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:kzw3jEi2dShg@ep-long-mud-49593253-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:kzw3jEi2dShg@ep-long-mud-49593253.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-long-mud-49593253-pooler.ap-southeast-1.aws.neon.tech"
+POSTGRES_PASSWORD="kzw3jEi2dShg"
+POSTGRES_DATABASE="verceldb"
+
+# Ensure your DATABASES configuration looks like this:
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'consignwebsite',
-        'USER': 'consignwebsite_user',
-        'PASSWORD':'AxKAIFZMgC6qcZx52V4C4SLyDEUq3NA7',
-        'HOST': 'dpg-cfi6j982i3murce2t860-a.singapore-postgres.render.com',
+        'NAME': POSTGRES_DATABASE,
+        'USER': POSTGRES_USER,
+        'PASSWORD': POSTGRES_PASSWORD,
+        'HOST': POSTGRES_HOST,
         'PORT': '5432',
     }
 }
+
 
 
 # Password validation
