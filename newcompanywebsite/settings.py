@@ -86,14 +86,14 @@ POSTGRES_URL="postgres://default:kzw3jEi2dShg@ep-long-mud-49593253-pooler.ap-sou
 # settings.py
 
 # Define PostgreSQL URLs
-POSTGRES_URL = "postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
-POSTGRES_PRISMA_URL = "postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
-POSTGRES_URL_NO_SSL = "postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb"
-POSTGRES_URL_NON_POOLING = "postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
-POSTGRES_USER = "default"
-POSTGRES_HOST = "ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech"
-POSTGRES_PASSWORD = "l6sHEumPB9rc"
-POSTGRES_DATABASE = "verceldb"
+POSTGRES_URL="postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_PRISMA_URL="postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require&pgbouncer=true&connect_timeout=15"
+POSTGRES_URL_NO_SSL="postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech:5432/verceldb"
+POSTGRES_URL_NON_POOLING="postgres://default:l6sHEumPB9rc@ep-fragrant-cherry-a1xsxnap.ap-southeast-1.aws.neon.tech:5432/verceldb?sslmode=require"
+POSTGRES_USER="default"
+POSTGRES_HOST="ep-fragrant-cherry-a1xsxnap-pooler.ap-southeast-1.aws.neon.tech"
+POSTGRES_PASSWORD="l6sHEumPB9rc"
+POSTGRES_DATABASE="verceldb"
 
 # Use the appropriate database URL based on your environment
 DATABASES = {
